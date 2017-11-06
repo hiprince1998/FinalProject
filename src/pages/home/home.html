@@ -4,14 +4,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content  padding>
+  
+    <ion-card *ngIf="scanned">
+        <ngx-qrcode [qrc-value]="scanned"></ngx-qrcode>
+        <ion-card-content>
+          <a [href]="scanned"> {{scanned}}</a>
+        </ion-card-content>
+      </ion-card>
+    
+     
+
+  <ion-fab  bottom center>
+    <button ion-fab (click)="startScan()" color="secondary">
+      <ion-icon name="expand"></ion-icon>
+      
+    </button>
+     
+  </ion-fab>  
 </ion-content>

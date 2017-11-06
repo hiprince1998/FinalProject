@@ -1,6 +1,8 @@
 {
   "name": "Barcode",
-  "app_id": "6a3d9416",
+  "app_id": "3b240e6a",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

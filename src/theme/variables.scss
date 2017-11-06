@@ -37,7 +37,7 @@ $colors: (
   primary:    #488aff,
   secondary:  #32db64,
   danger:     #f53d3d,
-  light:      #f4f4f4,
+  light:      #B80404,
   dark:       #222
 );
 
@@ -52,7 +52,10 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
-
+$tabs-md-tab-font-size	:1.5rem;
+$tabs-md-tab-icon-size:3.5rem;
+ 
+$fab-size:70px;
 
 
 
