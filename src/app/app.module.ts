@@ -2,7 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
+import { QRScanner, QRScannerStatus } from '@ionic-native/qr-scanner';
 import { AboutPage } from '../pages/create/about';
 import { ContactPage } from '../pages/more/contact';
 import { HomePage } from '../pages/home/home';
@@ -35,7 +35,7 @@ import{NgxQRCodeModule} from 'ngx-qrcode3';
     TabsPage
   ],
   providers: [
-    StatusBar,
+    StatusBar,QRScanner,
     SplashScreen,BarcodeScanner,AppVersion,SocialSharing,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
